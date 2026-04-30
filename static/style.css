@@ -1,0 +1,185 @@
+/* =============================================
+   BACKGROUND — swap this out for your own photo
+   ============================================= */
+body {
+    font-family: monospace;
+    background-color: #406768;
+    background-image: url("images/very-pretty.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 4ex 1rem 6ex;
+    min-height: 100vh;
+}
+
+.breadcrumb {
+    font-family: monospace;
+    font-size: 0.85em;
+    color: #cfe6e6;
+    margin: 0 0 1.5ex 0;
+}
+
+.breadcrumb a {
+    color: #dfedf1;
+}
+
+.breadcrumb a:hover {
+    color: #631b1b;
+}
+
+/* =============================================
+   MAIN BOX
+   ============================================= */
+#full-page {
+    max-width: 48em;
+    margin: 4ex auto;
+    background: #D5D3CC;                /* Light Gray */
+    color: #19350C;                     /* Phthalo Green */
+    padding: 4ex 7% 5ex;
+    border-radius: 4px;
+    opacity: 0.96;
+    line-height: 1.7;
+}
+
+/* =============================================
+   TYPOGRAPHY
+   ============================================= */
+h1, h2, h3 {
+    color: #406768;                     /* Deep Space Sparkle */
+    margin-top: 0;
+}
+
+p, li {
+    color: #19350C;                     /* Phthalo Green */
+}
+
+b {
+    color: #19350C;
+}
+
+/* =============================================
+   ASCII HEADER
+   ============================================= */
+#header-block {
+    text-align: center;
+}
+
+.ascii {
+    color: #687D31;                     /* Mustard Green */
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    white-space: pre;
+    line-height: 1.2;
+}
+
+/* =============================================
+   TAGLINE
+   ============================================= */
+.tagline {
+    text-align: center;
+    color: #406768;
+    font-style: italic;
+    display: inline-block;
+    min-height: 1.2em;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.tagline::after {
+    content: "|";
+    position: absolute;
+    right: -0.3em;
+    color: #406768;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to { opacity: 0; }
+}
+
+/* =============================================
+   LINKS
+   ============================================= */
+.links, a.links {
+    color: #6FA9BB;                     /* Moonstone Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    font-size: 0.9em;
+}
+
+/* =============================================
+   LISTS
+   ============================================= */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+ul.links li {
+    margin-bottom: 4px;
+}
+
+/* =============================================
+   DIVIDERS
+   ============================================= */
+hr {
+    border: none;
+    border-top: 1px solid #406768;     /* Deep Space Sparkle */
+    margin: 2.5ex 0;
+    opacity: 0.4;
+}
+
+/* =============================================
+   INTRO TEXT
+   ============================================= */
+.introduction {
+    text-align: justify;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+    text-align: center;
+    color: #687D31;                     /* Mustard Green */
+    margin-top: 20px;
+    font-size: 0.85em;
+}
+
+/* =============================================
+   PEDOBEAR (the important one)
+   ============================================= */
+.fuckpedosgettingvotedforpresident {
+    display: block;
+    margin: 24px auto 0;
+    width: 140px;
+    opacity: 0.85;
+}
+
+/* =============================================
+   MOBILE
+   ============================================= */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+
+    #full-page {
+        padding: 3ex 5% 4ex;
+    }
+
+    .ascii {
+        font-size: 7px;
+    }
+}
